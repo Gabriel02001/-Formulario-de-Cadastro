@@ -9,4 +9,4 @@ HTML, CSS, JavaScript, Boostrap, Jquery, JQuery Validation e jQuery Mask Plugin 
 
 Serviços
 
-Reqres - usada para responder aos seus pedidos de AJAX
+Reqres API - usada para responder aos pedidos de AJAX

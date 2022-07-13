@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOSTRAP CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css">
+    <!-- MY STYLE CSS -->
+    <link rel="stylesheet" href="/style/form.css">
+    <title>Form</title>
+</head>
+<body>
+
+  <!-- BOTÃO DARK/LIGHT MODE -->
+    <div class="toggle">
+        <input id="switch" type="checkbox" name="theme">
+        <label  class="label-switch" for="switch">Toggle</label>
+    </div>
+<!-- FORMULARIO -->
+    <form id="form" class="registration_form" >
+        <h1 class="title"> Registration Form</h1>
+        <div class="container"> 
+            <div class="container-form row">
+                <div class="form-field col-lg-6">
+                    <input id="name"  class="input-text" type="text" name="name"  placeholder=" ">
+                    <label for="name" class="label-field">name</label> 
+                </div>
+                <div class="form-field col-lg-6">
+                    <input id="cpf"  class="input-text" type="text" name="cpf" onkeypress="$(this).mask('000.000.000-00')" placeholder=" " >
+                    <label for="cpf" class="label-field">CPF</label> 
+                </div>
+                <div class="form-field col-lg-6">
+                    <input id="email"  class="input-text" type="email" name="email" placeholder=" "> 
+                    <label for="email" class="label-field">email</label> 
+                </div>
+                <div class="form-field col-lg-6">
+                    <input id="data"  class="input-text" type="date" name="data"  placeholder=" " >
+                    <label for="data" class="label-field">data</label> 
+                </div>
+                
+                <div class="form-field col-lg-6">
+                    <input id="password"  class="input-text" type="password" name="password" placeholder=" " >
+                    <label for="password" class="label-field">password</label> 
+                </div>
+                <div class="form-field col-lg-6">
+                    <input id="confirmPassword"  class="input-text" type="password" name="confirmPassword" placeholder=" " >
+                    <label for="confirmPassword" class="label-field">confirmPassword</label> 
+                </div>
+            
+
+                <div class="form-field col-lg-12">
+                    <h1 class="title-checkbox">Selecione o seu género</h1>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="RadioOptions" id="inlineRadio1" value="Feminino">
+                        <label class="form-check-label-field" for="inlineRadio1">Feminino</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="RadioOptions" id="inlineRadio2" value="Masculino">
+                        <label class="form-check-label-field" for="inlineRadio2">Masculino</label>
+                      </div>
+                </div>
+
+                <div class="form-field col-lg-6 action-btns">
+                    <button class="submit-btn btn" type="submit">Submit</button>
+                    <button class="button-btn btn" type="button" onclick="this.form.reset();">Cancel</button>           
+                </div>
+                
+            </div>
+        </div>
+    </form>
+
+
+    
+<!-- MODAL -->
+<div class="modal fade"  id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Cadastro</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p id="msg"> 
+           
+            </p>
+            <p id="infors"> 
+           
+            </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+       
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- boostrap js-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- jquery mask -->
+    <script src="/script/jQuery-Mask-Plugin-master/dist/jquery.mask.min.js"></script>
+
+    <!-- jquery validate -->
+    <script src="/script/JQuery-Validation/dist/jquery.validate.min.js"></script>
+    <script src="/script/JQuery-Validation/dist/additional-methods.js"></script>
+    <script src="/script/JQuery-Validation/dist/localization/messages_pt_BR.js"></script>
+
+    <!-- my scripts -->
+    <script src="/script/form.js"></script>
+    <script src="/script/darkMode-toggle.js"></script>
+    <script src="/script/clearButton.js"></script>
+    
+</body>
+</html>
